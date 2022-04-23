@@ -1,0 +1,261 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root {
+    --navebar-height: 59px;
+}
+
+.logo {
+
+    margin: 2px 14px;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin: 1px 6px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 1px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(/img/bg18.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Bree Serif', serif;
+}
+
+#services {
+    display: flex;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(/img/bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 300px;
+}
+
+#client-section {
+    position: relative;
+    height: 276px;
+
+}
+
+.box {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(238, 228, 228);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(243, 235, 235);
+    box-shadow: 20px 20px 20px gray;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(211, 205, 205);
+    border-radius: 4000px;
+
+}
+
+.h-primarycenter {
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary {
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.itoms {
+    padding: 10px;
+    margin: 20px;
+
+
+}
+
+.itoms img {
+    height: 100px;
+    width: 200px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/img/contactus.jpg) no-repeat center center/cover;
+
+}
+
+.center {
+    background-color: black;
+    color: white;
+    padding: 9px 30px;
+    text-align: center;
+}
+
+/* #contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+     font-family: 'Bree Serif', serif;
+     font-size: 1.5rem;
+}
+.form-gp{
+    padding: 20px;
+     
+} */
+#contact-box input,
+#contact-box textarea {
+
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 10px 10px 10px rgb(46, 42, 49);
+}
+
+#contact-box form {
+    width: 50%;
+    margin: auto;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
